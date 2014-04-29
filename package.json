@@ -1,0 +1,20 @@
+{
+  "name": "networkerror-org",
+  "version": "0.0.0",
+  "description": "NetworkError's Website",
+  "main": "",
+  "scripts": {},
+  "author": "networkerror@gmail.com",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "require-dir": "^0.1.0",
+    "gulp-connect": "^2.0.5",
+    "event-stream": "^3.1.4",
+    "gulp-load-plugins": "^0.5.0",
+    "gulp-bower-files": "^0.2.2",
+    "gulp-sass": "^0.7.1",
+    "gulp-watch": "^0.6.2"
+  }
+}

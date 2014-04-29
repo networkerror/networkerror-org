@@ -1,0 +1,1 @@
+ mount --bind /home/vagrant/bind_mounts/networkerror-org/node_modules/ ./node_modules/
