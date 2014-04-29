@@ -1,1 +1,3 @@
- mount --bind /home/vagrant/bind_mounts/networkerror-org/node_modules/ ./node_modules/
+# NetworkError.Org
+This is my personal website - currently a huge work-in-progress.  Like, if this were geocities, there would be animated
+"under construction" gifs all over the place.
