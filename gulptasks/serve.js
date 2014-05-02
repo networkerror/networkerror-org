@@ -13,9 +13,9 @@ gulp.task('serve', function serve() {
 
   var watch = require('gulp-watch');
 
-//    gulp.watch(paths.stylesheets, [ 'build:stylesheets' ]);
-//    gulp.watch(paths.javascripts, [ 'build:javascripts' ]);
-//    gulp.watch(paths.index,       [ 'build:inject:index' ]);
+//  gulp.watch(paths.stylesheets, [ 'build:stylesheets' ]);
+  gulp.watch(paths.javascripts, [ 'build' ]);
+  gulp.watch(paths.index,       [ 'build' ]);
 
   watch({ glob: 'app/**/*' }).pipe(connect.reload());
 });

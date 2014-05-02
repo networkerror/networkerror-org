@@ -3,9 +3,10 @@ var merge = require('event-stream').merge;
 var plugins = require('gulp-load-plugins')();
 
 var paths = exports.paths = {
-  stylesheets   : [ 'app/core/**/*.scss', 'app/core/**.*.sass' ],
+  stylesheets   : [ 'app/core/**/*.scss', 'app/core/**/*.sass' ],
   javascripts   : 'app/core/**/*.js',
-  index         : 'app/index.html'
+  index         : 'app/index.html',
+  appRoot       : 'app/'
 };
 
 exports.streams = {
@@ -26,6 +27,5 @@ function streamJavascripts() {
     plugins.bowerFiles(plugins.ignore.exclude('**/*.css')),
     gulp.src(paths.javascripts)
   );
-
   return stream;
 }

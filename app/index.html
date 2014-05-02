@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="core">
 <head lang="en">
   <meta charset="UTF-8">
   <title>NetworkError's Place</title>
+  <!-- inject:css -->
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular-nested-module/RlModule.js"></script>
+  <script src="/core/controllers/home/home.js"></script>
+  <!-- endinject -->
 </head>
 <body>
-  Hello world.
+  <header>
+    Page Header
+  </header>
+  <main ng:controller="home" ng:include src="'core/controllers/home/home.html'"></main>
+  <footer>
+    Page Footer
+  </footer>
 </body>
 </html>
