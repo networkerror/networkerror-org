@@ -1,0 +1,31 @@
+@import 'colors';
+
+body {
+  $headerHeight: 80px;
+  &>header {
+    padding-top: 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid $subtleGray;
+    color: lighten($primary, 65%);
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    background-color: rgba($primaryDarker, .9);
+    width: 100%;
+    height: $headerHeight;
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-style: italic;
+      font-size: 35px;
+      margin: 0px;
+    }
+    sub {
+      padding-left: 8px;
+    }
+  }
+  &>main {
+    &:nth-of-type(1) {
+      margin-top: $headerHeight;
+    }
+  }
+}

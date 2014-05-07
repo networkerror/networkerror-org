@@ -3,21 +3,33 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>NetworkError's Place</title>
+  <!-- GOOGLE FONTS -->
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <!-- inject:css -->
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/core/styles/footer.css">
+  <link rel="stylesheet" href="/core/styles/header.css">
+  <link rel="stylesheet" href="/core/styles/spinner.css">
   <!-- endinject -->
   <!-- inject:js -->
   <script src="/bower_components/angular/angular.js"></script>
   <script src="/bower_components/angular-nested-module/RlModule.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="/core/controllers/home/home.js"></script>
   <!-- endinject -->
 </head>
 <body>
   <header>
-    Page Header
+    <h1>NetworkError.Org</h1>
+    <sub>...but I wouldn't want to live there...</sub>
   </header>
   <main ng:controller="home" ng:include src="'core/controllers/home/home.html'"></main>
   <footer>
-    Page Footer
+    <figure class="spinContainer">
+      <figure class="circle"></figure>
+      <figure class="circle1"></figure>
+    </figure>
   </footer>
 </body>
 </html>

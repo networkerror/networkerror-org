@@ -1,8 +1,7 @@
 var gulp = require('gulp');
-var paths = require('./support').paths;
 var all = require('./support').streams;
 
-gulp.task('serve', function serve() {
+gulp.task('serve', ['build'], function serve() {
   var connect = require('gulp-connect');
 
   connect.server({
@@ -13,9 +12,6 @@ gulp.task('serve', function serve() {
 
   var watch = require('gulp-watch');
 
-//  gulp.watch(paths.stylesheets, [ 'build:stylesheets' ]);
-  gulp.watch(paths.javascripts, [ 'build' ]);
-  gulp.watch(paths.index,       [ 'build' ]);
-
+  gulp.watch('app/**/*', [ 'build' ]);
   watch({ glob: 'app/**/*' }).pipe(connect.reload());
 });
